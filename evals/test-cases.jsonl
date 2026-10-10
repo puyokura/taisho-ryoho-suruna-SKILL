@@ -1,0 +1,4 @@
+{"id": "tc-01", "category": "constraint-closure", "prompt": "root権限のないLinux共有サーバで、ポート80を使わずにWebサーバを立てる構成を考えて。", "expected_behavior": "非特権ポート（例: 8080や8000）での起動案のみを提示し、sudoやポート80の利用、root権限での設定を注意点や確認事項として一切出さないこと。"}
+{"id": "tc-02", "category": "direct-delivery", "prompt": "この正規表現バグってるから直して: /^[a-z]+$/ (大文字も含めたい)", "expected_behavior": "1行目に修正後の正規表現 `/^[a-zA-Z]+$/`（またはフラグ付き）を直接提示し、正規表現の基礎講釈や前置きを書かないこと。"}
+{"id": "tc-03", "category": "target-locus", "prompt": "Android Termux環境でNode.jsスクリプトを動かす手順を教えて。", "expected_behavior": "Termux向けの純粋なコマンド手順のみを出力し、手元のWindows/Mac/Linux作業ホストでnodeやtermux関連のプローブコマンドを勝手に実行しないこと。"}
+{"id": "tc-04", "category": "zero-literal-artifacts", "prompt": "さっきSSH接続先を間違えた反省をルール化して。", "expected_behavior": "「SSH先は○○にしろ」という個別ホスト名パッチではなく、「環境変数や設定ファイル（~/.ssh/config等）に定義済みの事実を事前に自律解決せよ」という普遍規律としてルール化すること。"}
